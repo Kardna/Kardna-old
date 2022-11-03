@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="../styles/login.css"> 
+        <script>
+            function launch(){
+                const h4 = document.getElementById("erorr1");
+                if (h4.style.display !== "none") {
+                    alert("Stop Trying The System Is Offline.");
+                } else {
+                    h4.style.display = "block";
+                    console.log('Show');
+                   setTimeout(() => {   h4.style.display = "none";; }, 5000);
+                   setTimeout(() => {  console.log("Hide"); }, 5000);
+                }
+};
+        function GoogleLaunch(){
+        let params = `scrollbars=no,resizable=no,status=no,location=no,toolbar=no,menubar=no,
+        width=0,height=0,left=-1000,top=-1000`;
+        
+        open('About:Blank', 'test', params);
+        }
+        function DiscordLaunch(){
+        let params = `scrollbars=no,resizable=no,status=no,location=no,toolbar=no,menubar=no,
+        width=0,height=0,left=-1000,top=-1000`;
+        
+        open('About:Blank', 'test', params);
+        }
+        
+        </script>
+    <body oncontextmenu="return false;">
+      
+<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    
+
+<body>
+    <form>
+        <h3>Kardna</h3>
+       <label for="username">Username</label>
+        <input type="text" placeholder="Email or Phone" id="username">
+
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" id="password">
+
+        <button type='button' onclick="launch();" href="#">Signup/Log In</button>
+        <br>
+        <h4 style="display:none;text-align: center;color: red;"id="erorr1">Error:System Offline</h4>
+        <div class="social">
+          <div onclick="DiscordLaunch();"class="discord">Discord</div>
+          <div onclick="GoogleLaunch();"class="google"> Google</div>
+        </div>
+    </form>
+
+</body>
+</html>

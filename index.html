@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Kardna</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700" rel="stylesheet"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.1.0/css/all.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+  <nav id="navbar"class="site">
+    <h2 onclick="location.reload()">Kardna</h2>
+   <div id="search">
+    <form class="uvform"><input type="text" class="uvform" placeholder="Search the web freely" id="placeholder"></form>
+   </div>
+   <div> 
+     <a id="buttonhidbaranimation"onclick="NavHome();"><i class="fas fa-home"></i></a>
+     <a id="buttonhidbaranimation"onclick="loader();NavWeb();"><i class="fas fa-globe"></i></a>
+     <a id="buttonhidbaranimation"onclick="loader();NavGame();"><i class="fas fa-gamepad"></i></a>
+     <a id="buttonhidbaranimation"onclick="loader();NavMusic();"><i class="fas fa-compact-disc"></i></a>
+     <a id="buttonhidbaranimation"onclick="loader();NavMovie();"><i class="fas fa-film"></i></i></a>
+     <span></span>
+     <h2>3.0</h2>
+     <a style="display: none;"onclick="NavFavs();"><i class="fas fa-heart"></i></a>
+     <a style="display: none;"onclick="NavSettings();"><i class="fa fa-gear"></i></a>     
+     <a style="display: none;"onclick="loader();NavAccount();"><i class="fa fa-user-o"></i></a>  
+   </div>
+ </nav>
+ <img style="position:fixed; top:5%; left:0; bottom:0px; right:0; width:100%; height:90%; z-index: -999;"src="kt.png">
+ <iframe id="navbar"style="position:fixed; top:0; left:0; bottom:0px; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index: -2; display: none;"src="./loading/"></iframe>
+  <iframe id="loader"style="position:fixed; top:0; left:0; bottom:0px; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index: -30; display: none;"src="./loading/"></iframe>
+</body>
+<script src='https://use.fontawesome.com/c97a6feda9.js'></script>
+<script src='https://code.jquery.com/jquery-latest.min.js'></script>
+<script src="js/script.js"></script>
+<script src="dip/dip.config.js"></script>
+<script src="dip/dip.page.js"></script>
+<script src="uv/uv.bundle.js"></script>
+<script src="uv/uv.config.js"></script>
+<script src="index.js"></script>
+<script src="./scripts/loader.js"></script>
+<script src="./scripts/nav.js"></script>
+<script src="js/buttonhidbaranimation.js"></script>
+</body>
+</html>

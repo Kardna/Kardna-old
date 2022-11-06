@@ -2,14 +2,11 @@ function NavHome(){
   console.log("Does Nothing Lol")
 }
 function NavWeb(){
+  document.getElementById('navbar').hidden = true
     const delay = (delayInms) => {
         return new Promise(resolve => setTimeout(resolve, delayInms));
       }
       console.log('searching=$webjsong')
-      w();
-      function w() {
-        $('nav').css('display', 'none');
-      }
       const sample = async () => {
         console.log('fetching...')
         let delayres = await delay(2500);
@@ -19,14 +16,11 @@ function NavWeb(){
       sample();
 }
 function NavGame(){
+  document.getElementById('navbar').hidden = true
     const delay = (delayInms) => {
         return new Promise(resolve => setTimeout(resolve, delayInms));
       }
       console.log('searching=$webjsong')
-      w();
-      function w() {
-        $('nav').css('display', 'none');
-      }
       const sample = async () => {
         console.log('fetching...')
         let delayres = await delay(2500);
@@ -36,14 +30,11 @@ function NavGame(){
       sample();
 }
 function NavMusic(){
+  document.getElementById('navbar').hidden = true
   const delay = (delayInms) => {
     return new Promise(resolve => setTimeout(resolve, delayInms));
   }
   console.log('searching=$webjsong')
-  w();
-  function w() {
-    $('nav').css('display', 'none');
-  }
   const sample = async () => {
     console.log('fetching...')
     let delayres = await delay(2500);
@@ -53,14 +44,12 @@ function NavMusic(){
   sample();
 }
 function NavMovie(){
+  document.getElementById('navbar').hidden = true
   const delay = (delayInms) => {
     return new Promise(resolve => setTimeout(resolve, delayInms));
   }
   console.log('searching=$webjsong')
-  w();
-  function w() {
-    $('nav').css('display', 'none');
-  }
+
   const sample = async () => {
     console.log('fetching...')
     let delayres = await delay(2500);
@@ -76,14 +65,11 @@ function NavSettings(){
     alert("This Feature Is Not Avalible OR your verison of KARDNA is out of date :(");
 }
 function NavAccount(){
+  document.getElementById('navbar').hidden = true
      const delay = (delayInms) => {
       return new Promise(resolve => setTimeout(resolve, delayInms));
     }
     console.log('searching=$webjsonlogin')
-    w();
-    function w() {
-      $('nav').css('display', 'none');
-    }
     const sample = async () => {
       console.log('fetching...')
       let delayres = await delay(2500);

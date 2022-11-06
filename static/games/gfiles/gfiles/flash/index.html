@@ -1,13 +1,26 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Flash Player</title>
+		<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WKJQ5QHQTJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WKJQ5QHQTJ');
+</script>
+
+		<title>Zenfy</title>
 		<style>
+						@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
 			body {
 				overflow: hidden;
-				font-family: sans-serif;
+				font-family: 'Anton', sans-serif;
+				
 			}
-			
+
 			.main {
 				background: black;
 				position: absolute;
@@ -15,7 +28,6 @@
 				height: 100%;
 				left: 0px;
 				right: 0px;
-				top: 0px;
 				bottom: 0px;
 				overflow: hidden;
 			}
@@ -106,11 +118,7 @@
 				font-size: 10px;
 			}
 			
-			ul {
-				list-style: none;
-				padding: 0;
-				margin: 0;
-			}
+			
 			
 			#menu {
 				position: fixed;
@@ -146,7 +154,7 @@
 		</style>
 		<script>
 			var mainarea, ffd, upload, legacy, rplayer, useLegacy;
-			var cdn = "https://rawcdn.githack.com/BinBashBanana/gstore/77d8f30a366b62f3e8e3cbe750b4bffe0031d53b/";
+			var cdn = "./swf/";
 			
 			// query string into object
 			var search = decodeURIComponent(window.location.search).substring(1).split("&");
@@ -297,8 +305,10 @@
 				}
 			}, false);
 		</script>
+
 	</head>
 	<body>
+<!--End nav-->
 		<div class="main" id="mainarea">
 			<ul id="menu">
 				<li title="Try to use the flash plugin (only available in browsers that still support it)"><input type="checkbox" id="legacy">Use flash object</li>
@@ -310,5 +320,23 @@
 				<a href="https://ruffle.rs" target="_blank" class="source">Source</a>
 			</div>
 		</div>
+		<script>
+			function myFunction1() {
+			  var x = document.getElementById("error-msg");
+			  if (x.style.display === "none") {
+				x.style.display = "block";
+			  } else {
+				x.style.display = "none";
+			  }
+			}
+			function opensettings(){
+		const id = document.getElementById("opensettingsid");
+		if (id.style.display === "none") {
+			id.style.display = "block";
+		  } else {
+			id.style.display = "none";
+		  }
+	}
+			</script>
 	</body>
 </html>
